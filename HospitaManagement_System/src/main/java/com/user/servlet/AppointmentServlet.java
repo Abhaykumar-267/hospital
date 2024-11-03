@@ -22,7 +22,7 @@ public class AppointmentServlet extends HttpServlet{
 		// TODO Auto-generated method stub
 		int userId = Integer.parseInt(req.getParameter("userid"));
 		String fullname = req.getParameter("fullname");
-		String gender = req.getParameter("age");
+		String gender = req.getParameter("gender");
 		String age = req.getParameter("age");
 		String appoint_date = req.getParameter("appoint_date");
 		String email = req.getParameter("email");

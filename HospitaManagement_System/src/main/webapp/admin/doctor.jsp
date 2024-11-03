@@ -40,7 +40,7 @@ width:430px;
             <p class="fs-3 text-center">Add Doctor</p>
             <c:if test ="${not empty errorMsg }">
         <p class ="fs-3 text-center text-danger">${errorMsg}</p>
-        <c:remove var= "errorMsg" scope ="session" />
+          <c:remove var= "errorMsg" scope ="session" />
      </c:if>
      
      <c:if test ="${not empty succMsg }">

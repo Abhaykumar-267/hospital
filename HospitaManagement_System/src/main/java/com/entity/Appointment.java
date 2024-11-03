@@ -37,7 +37,17 @@ public class Appointment {
 		this.address = address;
 		this.status = status;
 	}
-
+     
+	
+	public int  getId()
+	{
+		return id;
+	}
+	
+	public void setId(int id)
+	{
+		this.id = id;
+	}
 	
 	public int getUserId() {
 		return userId;

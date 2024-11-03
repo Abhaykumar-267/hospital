@@ -38,6 +38,7 @@ margin-top:13px;
 		<div class="container-fulid backImg p-5">
 			<p class="text-center fs-2 text-white"></p>
 		</div>
+		
 		<div class="container p-3">
 			<div  class="row">
 				<div class="col-md-6 p-3">
@@ -70,7 +71,7 @@ margin-top:13px;
 								<div class="col-md-6">
 									<label>Gender</label>
 									<div id="ab">
-									<select>
+									<select name="gender">
 										<option value="male">Male</option>
 										<option value="female">Female</option>
 									</select>

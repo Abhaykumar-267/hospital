@@ -58,7 +58,7 @@
    <i class="fa-solid fa-user"></i> ${ userObj.fullName}
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">Change password</a></li>
+    <li><a class="dropdown-item" href="change_password.jsp">Change password</a></li>
     <li><a class="dropdown-item" href="UserLogout">Logout</a></li>
    
   </ul>

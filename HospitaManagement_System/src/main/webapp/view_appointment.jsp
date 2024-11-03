@@ -33,7 +33,7 @@
 <body>
 	<%@include file="component/Navbar.jsp" %>
 	
-		<div class="container-fulid backImg p-5">
+		<div class="container-fulid backImg p-3">
 			<p class="text-center fs-2 text-white"></p>
 		</div>
 		<div class="container p-3">

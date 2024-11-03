@@ -24,7 +24,7 @@ color: blue;
 
 </head>
 <body>
-<%@include file="component/Navbar.jsp" %>
+<%@include file ="component/Navbar.jsp"%>
 
 <div class="container p-5">
   <div class="row">

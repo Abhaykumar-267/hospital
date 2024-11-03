@@ -14,7 +14,7 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         
         
-        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="home.jsp">HOME</a></li>
+        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.jsp">HOME</a></li>
         <li class="nav-item"><a class="nav-link active" aria-current="page" href="doctor.jsp">DOCTOR</a></li>
         <li class="nav-item"><a class="nav-link active" aria-current="page" href="view_doctor.jsp">VIEW_DOCTOR</a></li>
         <li class="nav-item"><a class="nav-link active" aria-current="page" href="patient.jsp">PATIENT</a></li>
@@ -28,6 +28,7 @@
               
                 </button>
                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                         
                           <li><a class="dropdown-item" href="../adminLogout" name="Logout">Logout</a></li>
                             
                    </ul>

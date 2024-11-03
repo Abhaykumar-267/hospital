@@ -26,6 +26,7 @@ public class Userlogin extends HttpServlet{
 				
 				HttpSession session= req.getSession();
 				UserDao dao = new UserDao(DBConnect.getConn());
+				
 				User user = dao.Userlogin(email,password);
 				DoctorDao dao2 = new DoctorDao(DBConnect.getConn());
 				Doctor d = dao2.login(email, password);
@@ -51,7 +52,7 @@ public class Userlogin extends HttpServlet{
 				
 				else
 				{
-					msg = "ooho! invalid email & password";
+					msg = " invalid email & password";
 					
 					req.setAttribute("msg", msg);
 					req.getRequestDispatcher("user_login.jsp").forward(req, resp);
@@ -61,7 +62,7 @@ public class Userlogin extends HttpServlet{
 				
 			}catch(Exception e)
 			{
-				
+				e.printStackTrace();
 			}
 		}
 

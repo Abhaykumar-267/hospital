@@ -9,7 +9,7 @@ import com.entity.User;
 public class UserDao {
    
 	
-private Connection conn;
+private  Connection conn;
 
 	
 	public UserDao(Connection conn) {
@@ -73,5 +73,51 @@ private Connection conn;
 		}
 		
 		return u;
+	}
+	
+	public boolean checkOldPassword(int userid,String oldpassword)
+	{
+		boolean f = false;
+		try {
+			String sql ="select * from user_dts where id=? and password =?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setInt(1, userid);
+			ps.setString(2, oldpassword);
+			
+			ResultSet rs = ps.executeQuery();
+			while(rs.next())
+			{
+				f=true;
+			}
+			
+			
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return f;
+	}
+	
+	public boolean changePassword(int userid,String newpassword)
+	{
+		boolean f = false;
+		try {
+			String sql ="update user_dts set password =? where id=?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			
+			ps.setString(1, newpassword);
+			ps.setInt(2, userid);
+			
+			int i = ps.executeUpdate();
+			if(i==1)
+			{
+				f=true;
+			}
+			
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return f;
 	}
 }

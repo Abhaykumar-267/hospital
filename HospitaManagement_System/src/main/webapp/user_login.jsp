@@ -38,7 +38,8 @@ color:red
 	                if(msg != null){
 		                   out.print(msg);
 	                    }
-            %></h3>
+            %>
+            </h3>
       
       <form action="Login" method="post">
         <div class="mb-3">
@@ -49,10 +50,10 @@ color:red
         </div>
         
          <div class="mb-3">
+         
            <label class="form-Label"> Password</label> 
            <input required name="password" type="password" class ="form-control">
              
-        
         </div> 
         
         <button type="submit" class="btn bg-success text-white col-md-12">Login</button>
